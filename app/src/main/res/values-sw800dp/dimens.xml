@@ -1,0 +1,59 @@
+<resources>
+<!--Defaultscreenmargins,pertheAndroidDesignguidelines.-->
+
+
+<dimen name="textSize15">25.05sp</dimen>
+<dimen name="textSize16">26.72sp</dimen>
+<dimen name="textSize17">28.39sp</dimen>
+<dimen name="textSize18">30.06sp</dimen>
+<dimen name="textSize20">33.399998sp</dimen>
+<dimen name="textSize26">43.42sp</dimen>
+<dimen name="textSize23">38.41sp</dimen>
+<dimen name="textSize30">50.1sp</dimen>
+<dimen name="textSize40">66.799995sp</dimen>
+
+<dimen name="value0">0.0dp</dimen>
+<dimen name="value1">1.67dp</dimen>
+<dimen name="value2">3.34dp</dimen>
+<dimen name="value3">5.0099998dp</dimen>
+<dimen name="value4">6.68dp</dimen>
+<dimen name="value5">8.349999dp</dimen>
+<dimen name="value8">13.36dp</dimen>
+<dimen name="value10">16.699999dp</dimen>
+<dimen name="value11">18.369999dp</dimen>
+<dimen name="value12">20.039999dp</dimen>
+<dimen name="value13">21.71dp</dimen>
+<dimen name="value15">25.05dp</dimen>
+<dimen name="value16">26.72dp</dimen>
+<dimen name="value20">33.399998dp</dimen>
+<dimen name="value25">41.75dp</dimen>
+<dimen name="value30">50.1dp</dimen>
+<dimen name="value32">53.44dp</dimen>
+<dimen name="value35">58.449997dp</dimen>
+<dimen name="value40">66.799995dp</dimen>
+<dimen name="value45">75.15dp</dimen>
+<dimen name="value48">80.159996dp</dimen>
+<dimen name="value50">83.5dp</dimen>
+<dimen name="value60">100.2dp</dimen>
+<dimen name="value70">116.899994dp</dimen>
+<dimen name="value76">126.92dp</dimen>
+<dimen name="value80">133.59999dp</dimen>
+
+<dimen name="value100">167.0dp</dimen>
+<dimen name="value110">183.7dp</dimen>
+<dimen name="value115">192.04999dp</dimen>
+<dimen name="value120">200.4dp</dimen>
+<dimen name="value130">217.09999dp</dimen>
+<dimen name="value140">233.79999dp</dimen>
+<dimen name="value150">250.5dp</dimen>
+<dimen name="value192">320.63998dp</dimen>
+<dimen name="value200">334.0dp</dimen>
+<dimen name="value210">350.69998dp</dimen>
+<dimen name="value250">417.5dp</dimen>
+<dimen name="value280">467.59998dp</dimen>
+<dimen name="value300">501.0dp</dimen>
+<dimen name="value325">542.75dp</dimen>
+<dimen name="value360">601.2dp</dimen>
+<dimen name="value400">668.0dp</dimen>
+
+</resources>

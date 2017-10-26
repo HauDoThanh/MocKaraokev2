@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_xam"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/lineHis_Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listHint_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_main">
+
+        </ListView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listAct_Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_main" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/propressbar"
+        android:visibility="invisible" />
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <!--Defaultscreenmargins,pertheAndroidDesignguidelines.-->
+
+
+    <dimen name="textSize15">15.0sp</dimen>
+    <dimen name="textSize16">16.0sp</dimen>
+    <dimen name="textSize17">17.0sp</dimen>
+    <dimen name="textSize18">18.0sp</dimen>
+    <dimen name="textSize20">20.0sp</dimen>
+    <dimen name="textSize26">26.0sp</dimen>
+    <dimen name="textSize23">23.0sp</dimen>
+    <dimen name="textSize30">30.0sp</dimen>
+    <dimen name="textSize40">40.0sp</dimen>
+
+    <dimen name="value0">0.0dp</dimen>
+    <dimen name="value1">1.0dp</dimen>
+    <dimen name="value2">2.0dp</dimen>
+    <dimen name="value3">3.0dp</dimen>
+    <dimen name="value4">4.0dp</dimen>
+    <dimen name="value5">5.0dp</dimen>
+    <dimen name="value8">8.0dp</dimen>
+    <dimen name="value10">10.0dp</dimen>
+    <dimen name="value11">11.0dp</dimen>
+    <dimen name="value12">12.0dp</dimen>
+    <dimen name="value13">13.0dp</dimen>
+    <dimen name="value15">15.0dp</dimen>
+    <dimen name="value16">16.0dp</dimen>
+    <dimen name="value20">20.0dp</dimen>
+    <dimen name="value25">25.0dp</dimen>
+    <dimen name="value30">30.0dp</dimen>
+    <dimen name="value32">32.0dp</dimen>
+    <dimen name="value35">35.0dp</dimen>
+    <dimen name="value40">40.0dp</dimen>
+    <dimen name="value45">45.0dp</dimen>
+    <dimen name="value48">48.0dp</dimen>
+    <dimen name="value50">50.0dp</dimen>
+    <dimen name="value60">60.0dp</dimen>
+    <dimen name="value70">70.0dp</dimen>
+    <dimen name="value76">76.0dp</dimen>
+    <dimen name="value80">80.0dp</dimen>
+
+    <dimen name="value100">100.0dp</dimen>
+    <dimen name="value110">110.0dp</dimen>
+    <dimen name="value115">115.0dp</dimen>
+    <dimen name="value120">120.0dp</dimen>
+    <dimen name="value130">130.0dp</dimen>
+    <dimen name="value140">140.0dp</dimen>
+    <dimen name="value150">150.0dp</dimen>
+    <dimen name="value192">192.0dp</dimen>
+    <dimen name="value200">200.0dp</dimen>
+    <dimen name="value210">210.0dp</dimen>
+    <dimen name="value250">250.0dp</dimen>
+    <dimen name="value280">280.0dp</dimen>
+    <dimen name="value300">300.0dp</dimen>
+    <dimen name="value325">325.0dp</dimen>
+    <dimen name="value360">360.0dp</dimen>
+    <dimen name="value400">400.0dp</dimen>
+
+</resources>

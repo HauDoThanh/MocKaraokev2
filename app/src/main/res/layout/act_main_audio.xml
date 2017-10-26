@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_xam"
+    android:orientation="vertical"
+    tools:context=".Actitivy.Act_MainAudio">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/propressbar" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutMainAudio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/value8"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/echoText"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/echo"
+                    android:textColor="@color/soft_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value8"
+                    android:text="@string/reverbText"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reverb"
+                    android:textColor="@color/soft_white" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/echo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/echoText"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/echo_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/text0"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/echo_mix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/echo"
+                    android:layout_marginTop="5dp"
+                    android:max="100"
+                    android:progress="50" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reverb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reverbTextSeek"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/reverb_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/text0"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/reverb_mix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reverb"
+                    android:layout_marginTop="5dp"
+                    android:max="100"
+                    android:progress="50" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volumeText"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvVolumeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/textVolume"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVolume"
+                    android:layout_marginTop="@dimen/value5"
+                    android:max="20"
+                    android:progress="9" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/playPause"
+                    style="@style/buttonMainAudio"
+                    android:drawableTop="@drawable/ic_play_arrow_white_48dp"
+                    android:onClick="SuperpoweredExample_PlayPause"
+                    android:text="@string/phatAudio" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/buttonMainAudio"
+                    android:enabled="false"
+                    android:drawableTop="@drawable/ic_save_white_48dp"
+                    android:onClick="btnSaveClick"
+                    android:text="@string/luuAudio" />
+
+                <Button
+                    android:id="@+id/btnCreateVideo"
+                    style="@style/buttonMainAudio"
+                    android:drawableTop="@drawable/ic_movie_white_48dp"
+                    android:enabled="false"
+                    android:onClick="CreateVideo"
+                    android:text="@string/taoVideo" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

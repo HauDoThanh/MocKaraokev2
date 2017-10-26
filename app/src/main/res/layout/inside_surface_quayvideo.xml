@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnInsideQuay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value5"
+        android:background="@drawable/custom_button_pressed"
+        android:text="@string/quayVideo"
+        android:textColor="#c10000" />
+
+    <TextView
+        android:id="@+id/txtInsideTrangThai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value5"
+        android:layout_marginStart="@dimen/value5"
+        android:layout_marginTop="@dimen/value20"
+        android:layout_toEndOf="@id/btnInsideQuay"
+        android:layout_toRightOf="@id/btnInsideQuay"
+        android:text="@string/text0"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="@dimen/value100"
+        android:layout_height="@dimen/value100"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/value5"
+        android:background="@drawable/newlogo"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

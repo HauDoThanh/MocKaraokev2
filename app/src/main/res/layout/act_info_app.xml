@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_xam"
+    android:orientation="vertical"
+    tools:context="home.mockaraokev2.Actitivy.Act_InfoApp">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value250"
+        android:layout_marginTop="@dimen/value5"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_mockaraoke" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="@dimen/value10"
+        android:text="@string/moTaApp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize20" />
+</LinearLayout>

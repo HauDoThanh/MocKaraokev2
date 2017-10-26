@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/value10">
+
+    <Button
+        android:id="@+id/btnFrontCam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/no_color"
+        android:drawableLeft="@drawable/ic_camera_front_black_36dp"
+        android:drawableStart="@drawable/ic_camera_front_black_36dp"
+        android:gravity="center"
+        android:text="@string/cameraTruoc" />
+
+    <Button
+        android:id="@+id/btnRearCam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/no_color"
+        android:drawableLeft="@drawable/ic_camera_rear_black_36dp"
+        android:drawableStart="@drawable/ic_camera_rear_black_36dp"
+        android:gravity="center"
+        android:text="@string/cameraSau" />
+</LinearLayout>

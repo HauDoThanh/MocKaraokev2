@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_main</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColorSecondary">@color/black_transparent</item>
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:windowBackground">@color/back_main</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="image_view">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    //Bui Minh Tam
+    <style name="Style.For.EditText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="colorControlHighlight">#ffffff</item>
+    </style>
+
+    <style name="buttonMainAudio">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/button_botom</item>
+    </style>
+
+    <style name="buttonPlayVideo">
+        <item name="android:layout_width">@dimen/value48</item>
+        <item name="android:layout_height">@dimen/value48</item>
+        <item name="android:layout_marginLeft">@dimen/value10</item>
+    </style>
+
+</resources>

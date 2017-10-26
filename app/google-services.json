@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870656354648",
+    "project_id": "youtube-api-167813"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870656354648:android:612a1af216c2c707",
+        "android_client_info": {
+          "package_name": "home.mockaraokev2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870656354648-vbr9ors45u292g7soqktv0p6s5baqq8q.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "870656354648-rdf734u5fa0fdb23kbioil4dtfcr92f8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "home.mockaraokev2",
+            "certificate_hash": "3b2847ce486e9a8c9e000c222fc8ca2e2e817fd2"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHLHvpAQPKxIVtGgkGvDgKtmEHX6l36BA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

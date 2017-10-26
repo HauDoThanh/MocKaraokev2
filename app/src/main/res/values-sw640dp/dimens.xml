@@ -1,0 +1,59 @@
+<resources>
+<!--Defaultscreenmargins,pertheAndroidDesignguidelines.-->
+
+
+<dimen name="textSize15">19.5sp</dimen>
+<dimen name="textSize16">20.8sp</dimen>
+<dimen name="textSize17">22.099998sp</dimen>
+<dimen name="textSize18">23.4sp</dimen>
+<dimen name="textSize20">26.0sp</dimen>
+<dimen name="textSize26">33.8sp</dimen>
+<dimen name="textSize23">29.9sp</dimen>
+<dimen name="textSize30">39.0sp</dimen>
+<dimen name="textSize40">52.0sp</dimen>
+
+<dimen name="value0">0.0dp</dimen>
+<dimen name="value1">1.3dp</dimen>
+<dimen name="value2">2.6dp</dimen>
+<dimen name="value3">3.8999999dp</dimen>
+<dimen name="value4">5.2dp</dimen>
+<dimen name="value5">6.5dp</dimen>
+<dimen name="value8">10.4dp</dimen>
+<dimen name="value10">13.0dp</dimen>
+<dimen name="value11">14.299999dp</dimen>
+<dimen name="value12">15.599999dp</dimen>
+<dimen name="value13">16.9dp</dimen>
+<dimen name="value15">19.5dp</dimen>
+<dimen name="value16">20.8dp</dimen>
+<dimen name="value20">26.0dp</dimen>
+<dimen name="value25">32.5dp</dimen>
+<dimen name="value30">39.0dp</dimen>
+<dimen name="value32">41.6dp</dimen>
+<dimen name="value35">45.5dp</dimen>
+<dimen name="value40">52.0dp</dimen>
+<dimen name="value45">58.499996dp</dimen>
+<dimen name="value48">62.399998dp</dimen>
+<dimen name="value50">65.0dp</dimen>
+<dimen name="value60">78.0dp</dimen>
+<dimen name="value70">91.0dp</dimen>
+<dimen name="value76">98.799995dp</dimen>
+<dimen name="value80">104.0dp</dimen>
+
+<dimen name="value100">130.0dp</dimen>
+<dimen name="value110">143.0dp</dimen>
+<dimen name="value115">149.5dp</dimen>
+<dimen name="value120">156.0dp</dimen>
+<dimen name="value130">169.0dp</dimen>
+<dimen name="value140">182.0dp</dimen>
+<dimen name="value150">195.0dp</dimen>
+<dimen name="value192">249.59999dp</dimen>
+<dimen name="value200">260.0dp</dimen>
+<dimen name="value210">273.0dp</dimen>
+<dimen name="value250">325.0dp</dimen>
+<dimen name="value280">364.0dp</dimen>
+<dimen name="value300">390.0dp</dimen>
+<dimen name="value325">422.49997dp</dimen>
+<dimen name="value360">467.99997dp</dimen>
+<dimen name="value400">520.0dp</dimen>
+
+</resources>

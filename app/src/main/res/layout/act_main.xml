@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_xam"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:background="@color/color_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#fff"
+                app:tabTextColor="#c6ffffff"
+                app:tabPaddingEnd="@dimen/value2"
+                app:tabSelectedTextColor="#fff"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:actionBarNavMode="tabs">
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/background_xam"
+            android:layout_gravity="start"
+            >
+
+            <ExpandableListView
+                android:id="@+id/explvNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/value192"
+                android:groupIndicator="@null"
+               />
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/value48"
+    android:background="@color/background_cardview"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iconVideoRecord"
+        android:layout_width="@dimen/value32"
+        android:layout_height="@dimen/value32"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/value8"
+        android:layout_marginStart="@dimen/value8"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_audiotrack_white_48dp" />
+
+    <TextView
+        android:id="@+id/tvNameMyRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/value50"
+        android:layout_marginLeft="@dimen/value50"
+        android:layout_marginRight="@dimen/value32"
+        android:layout_marginStart="@dimen/value50"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize20" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="@dimen/value35"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="@dimen/value35"
+            android:layout_height="match_parent"
+            android:background="@color/no_color"
+            android:gravity="top" />
+
+        <ImageView
+            android:layout_width="@dimen/value32"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_more_vert_white_48dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonPlayVideo">
+        <item name="android:layout_width">@dimen/value48</item>
+        <item name="android:layout_height">@dimen/value48</item>
+        <item name="android:layout_marginLeft">@dimen/value10</item>
+        <item name="android:layout_marginStart">@dimen/value10</item>
+    </style>
+</resources>

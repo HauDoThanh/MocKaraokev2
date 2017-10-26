@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_xam"
+    android:orientation="vertical"
+    tools:context="home.mockaraokev2.Actitivy.Act_CreateVideoFromAudio">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value5"
+        android:layout_marginRight="@dimen/value5"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value220"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/banner" />
+
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize20" />
+
+        <TextView
+            android:id="@+id/txtSinger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value50"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize30" />
+
+        <EditText
+            android:id="@+id/edtSongName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBanner"
+            android:layout_marginTop="@dimen/value20"
+            android:hint="@string/song_name"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtSingerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSongName"
+            android:hint="@string/singer_name"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtSingerName"
+            android:text="@string/luuShareFacebook"
+            android:textColor="@color/soft_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_botom">
+
+        <Button
+            style="@style/buttonMainAudio"
+            android:drawableTop="@drawable/ic_save_white_48dp"
+            android:onClick="SaveAndCreateVideo"
+            android:text="@string/luuAudio"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

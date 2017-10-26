@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/createVideo"
+        android:title="Tạo video"
+        android:orderInCategory="100" />
+
+    <item
+        android:id="@+id/rename"
+        android:title="Đổi tên"
+        android:orderInCategory="100" />
+    <item
+        android:id="@+id/delete"
+        android:title="Xóa"
+        android:orderInCategory="100" />
+
+
+</menu>

@@ -1,0 +1,583 @@
+<resources>
+    <string name="library_name">Waveform</string>
+    <string name="app_name">MocTV Karaoke</string>
+    <string name="facebook_app_id">126945264629111</string>
+
+    <!-- Activity name -->
+    <string name="places_sample_activity_title">Places Sample</string>
+    <string name="youtube_sample_activity_title">Youtube Sample</string>
+    <string name="video_sample_activity_title">Video Sample</string>
+
+    <!-- Buttons -->
+    <string name="places_sample_button">Places Sample</string>
+    <string name="youtube_sample_button">Youtube Sample</string>
+    <string name="video_sample_button">Video Sample</string>
+    <string name="tv_shows_sample_activity_title">TV Shows Sample</string>
+    <string name="tv_shows_sample_button">TV Shows Sample</string>
+    <string name="main_activity_places_button_title">Places</string>
+    <string name="main_activity_tv_shows_button_title">Tv Shows</string>
+    <string name="main_activity_youtube_button_title">Youtube</string>
+    <string name="main_activity_video_view_button_title">VideoView</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="song_name">Tên bài hát</string>
+    <string name="singer_name">Tên ca sĩ</string>
+
+    <string name="huongDanSuDung">
+        \n
+        ** Hướng dẫn sử dụng:
+        \n\n
+        - Kéo thanh trượt để điều chỉnh hiệu ứng \n
+            \t\t + Echo: tiếng lặp \n
+            \t\t + Reverb: tiếng vang \n
+            \t\t + Volume: chỉnh âm lượng của file ghi âm \n
+        - Sau khi chỉnh xong bấm save để lưu \n
+        - Nếu bạn muốn tạo video từ bài hát vừa thu thì bấm vào nút Tạo Video\n\n
+        ** Lưu ý bạn chỉ có thể tạo video sau khi lưu bài hát lại
+
+
+    </string>
+    <string name="reverb">Nếu một lúc nào đó tình cờ hay cố ý, bạn nghe 1 bản nhạc và cảm nhận giống như bạn đang đứng trong một nhà hát lớn, với một dàn nhạc khổng lồ, hoành tráng, hay 1 bài nhạc ma mị sâu thẳm, hay một bản acoustic trong một không gian phòng,… Hiệu ứng mô phỏng không gian này gọi là reverb</string>
+    <string name="echo">Trong xử lý tín hiệu âm thanh, tiếng vang là một sự phản ánh của âm thanh mà đến lúc nghe với một sự chậm trễ sau khi âm thanh trực tiếp. Sự chậm trễ này tỷ lệ với khoảng cách của bề mặt phản chiếu từ nguồn âm và người nghe.</string>
+    <string name="echoText">Echo</string>
+    <string name="reverbText">Reverb – Sự vang âm</string>
+    <string name="text0">0.5</string>
+    <string name="reverbTextSeek">Reverb</string>
+    <string name="volumeText">Volume</string>
+    <string name="textVolume">1.0</string>
+    <string name="phatAudio">Phát</string>
+    <string name="luuAudio">Lưu</string>
+    <string name="taoVideo">Tạo Video</string>
+    <string name="luuShareFacebook">
+        ** Gợi ý: \n
+        Bạn có thể chia sẻ lên facebook sau khi tạo video xong</string>
+    <string name="moTaApp">Ứng dụng karaoke được phát hành bởi MOCKaraoke   Phiên bản: 1.0.0</string>
+    <string name="slogan">Hoà nhịp đam mê</string>
+    <string name="supportApp">Mọi chi tiết xin vui lòng liên hệ qua email:  nguyen1moctv@gmail.com</string>
+    <string name="cameraTruoc">Camera trước</string>
+    <string name="cameraSau">Camera sau</string>
+    <string name="dsRong">Danh sách rỗng!</string>
+    <string name="quayVideo">Quay</string>
+    <string name="loadData">Đang tải dữ liệu...</string>
+    <string-array name="Function">
+        <item>Thêm vào danh sách yêu thích</item>
+        <item>Thêm vào danh sách phát</item>
+        <item>Xoá khỏi danh sách</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="itemMyVideo">
+        <item>Chia sẻ qua facebook</item>
+        <item>Đổi tên</item>
+        <item>Xoá</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="itemMyRecord">
+        <item>Tạo video</item>
+        <item>Đổi tên</item>
+        <item>Xoá</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="singer">
+        <item>	OnlyC	</item>
+        <item>	Khắc Hưng	</item>
+        <item>	Sơn Tùng M-TP	</item>
+        <item>	Soobin Hoàng Sơn	</item>
+        <item>	Chi Dân	</item>
+        <item>	Đan Trường	</item>
+        <item>	Anh Tom	</item>
+        <item>	Hồ Quỳnh Hương	</item>
+        <item>	Du Thiên	</item>
+        <item>	Phương Trinh Jolie	</item>
+        <item>	Khởi My	</item>
+        <item>	Will	</item>
+        <item>	Đức Trí	</item>
+        <item>	Khắc Việt	</item>
+        <item>	Lê Vũ Bình	</item>
+        <item>	Jang Mi	</item>
+        <item>	MTV	</item>
+        <item>	MIN	</item>
+        <item>	Quang Vinh	</item>
+        <item>	Bạch Công Khanh	</item>
+        <item>	Phạm Vân Anh	</item>
+        <item>	HER	</item>
+        <item>	Võ Ê Vo	</item>
+        <item>	R.Tee	</item>
+        <item>	Khải Đăng	</item>
+        <item>	Nguyễn Hưng Dũng	</item>
+        <item>	Đàm Vĩnh Hưng	</item>
+        <item>	Trung Quân Idol	</item>
+        <item>	Cao Vũ	</item>
+        <item>	Hồng Dương MU	</item>
+        <item>	Đức Phúc	</item>
+        <item>	Bảo Thy	</item>
+        <item>	Đinh Hương	</item>
+        <item>	Bùi Anh Tuấn	</item>
+        <item>	Lê Bảo Bình	</item>
+        <item>	Hồ Chí Hoàng	</item>
+        <item>	Kai Đinh	</item>
+        <item>	Bằng Kiều	</item>
+        <item>	Đình Bình	</item>
+        <item>	Phan Mạnh Quỳnh	</item>
+        <item>	Trà My Idol	</item>
+        <item>	S.T 	</item>
+        <item>	Ngô Kiến Huy	</item>
+        <item>	Miu Lê	</item>
+        <item>	Thiều Bảo Trang	</item>
+        <item>	Cẩm Ly	</item>
+        <item>	Trang Pháp	</item>
+        <item>	Hồ Quang Hiếu	</item>
+        <item>	Như Hoa	</item>
+        <item>	Thanh Duy	</item>
+        <item>	Trịnh Thăng Bình	</item>
+        <item>	Quang Dũng	</item>
+        <item>	Lou Hoàng	</item>
+        <item>	Thùy Chi	</item>
+        <item>	Hồ Ngọc Hà	</item>
+        <item>	Ưng Hoàng Phúc	</item>
+        <item>	OPlus	</item>
+        <item>	Hari Won	</item>
+        <item>	Đan Nguyên	</item>
+        <item>	Nguyễn Hữu Thành	</item>
+        <item>	Bích Phương	</item>
+        <item>	Tóc Tiên	</item>
+        <item>	Đoàn Thái Bảo	</item>
+        <item>	Hoàng Hải Dương	</item>
+        <item>	Hoàng Hải My	</item>
+        <item>	Huỳnh Lộc	</item>
+        <item>	Lê Hiếu	</item>
+        <item>	Thiên Nam	</item>
+        <item>	Rhymastic	</item>
+        <item>	Đông Nhi	</item>
+        <item>	Noo Phước Thịnh	</item>
+        <item>	Trịnh Đình Quang	</item>
+        <item>	Mr Siro	</item>
+        <item>	Hương Tràm	</item>
+        <item>	ERIK	</item>
+        <item>	Lưu Minh Tuấn	</item>
+        <item>	Sky Nguyễn	</item>
+        <item>	Nam Du	</item>
+        <item>	Lệ Quyên	</item>
+        <item>	Tuấn Hưng	</item>
+        <item>	Thu Minh	</item>
+        <item>	Phạm Hồng Phước	</item>
+        <item>	Quang Lê	</item>
+        <item>	Karik	</item>
+        <item>	Như Quỳnh	</item>
+        <item>	Isaac	</item>
+        <item>	Ali Hoàng Dương	</item>
+        <item>	Bảo Anh	</item>
+        <item>	Tiên Tiên	</item>
+        <item>	Tiên Cookie	</item>
+        <item>	Châu Khải Phong	</item>
+        <item>	Vũ Cát Tường	</item>
+        <item>	Bé Bảo An	</item>
+        <item>	Giáng Tiên	</item>
+        <item>	Minh Vương MU	</item>
+        <item>	Bùi Công Nam	</item>
+        <item>	Đen	</item>
+        <item>	Anh Thơ	</item>
+        <item>	Vũ Duy Khánh	</item>
+        <item>	Lâm Chấn Khang	</item>
+        <item>	Wendy Thảo	</item>
+        <item>	Dương Hồng Loan	</item>
+        <item>	Quốc Thiên	</item>
+        <item>	Trường Vũ	</item>
+        <item>	Cao Thái Sơn	</item>
+        <item>	Khói	</item>
+        <item>	JustaTee	</item>
+        <item>	Phan Đinh Tùng	</item>
+        <item>	Hoàng Yến Chibi	</item>
+        <item>	Duy Mạnh	</item>
+        <item>	Hà Anh Tuấn	</item>
+        <item>	Khánh Phương	</item>
+        <item>	Yan Nguyễn	</item>
+        <item>	Klaw	</item>
+        <item>	Ngọc Sơn	</item>
+        <item>	Dương Triệu Vũ	</item>
+        <item>	Lam Trường	</item>
+        <item>	Hamlet Trương	</item>
+        <item>	Sĩ Thanh	</item>
+        <item>	Như Hexi	</item>
+        <item>	DaBand	</item>
+        <item>	Hoàng Tôn	</item>
+        <item>	Hoài Lâm	</item>
+        <item>	Vương Anh Tú	</item>
+        <item>	Lynk Lee	</item>
+        <item>	Khưu Huy Vũ	</item>
+        <item>	Phi Nhung	</item>
+        <item>	Minh Tuyết	</item>
+        <item>	Thái Đinh	</item>
+        <item>	Lương Gia Huy	</item>
+        <item>	Châu Đăng Khoa	</item>
+        <item>	Hakoota Dũng Hà	</item>
+        <item>	Mai Thiên Vân	</item>
+        <item>	Gin Tuấn Kiệt	</item>
+        <item>	Mạnh Quỳnh	</item>
+        <item>	Giang Hồng Ngọc	</item>
+        <item>	Lương Bích Hữu	</item>
+        <item>	Nguyễn Đình Vũ	</item>
+        <item>	Tâm Đoan	</item>
+        <item>	Bé Bào Ngư	</item>
+        <item>	Lý Hải	</item>
+        <item>	Meghan Trainor	</item>
+        <item>	Phạm Trưởng	</item>
+        <item>	MONSTAR	</item>
+        <item>	Lê Thiện Hiếu	</item>
+        <item>	Bức Tường	</item>
+        <item>	Ưng Đại Vệ	</item>
+        <item>	Super Stars	</item>
+        <item>	Lam Anh	</item>
+        <item>	Jimmii Nguyễn	</item>
+        <item>	Hồ Việt Trung	</item>
+        <item>	Trọng Hiếu	</item>
+        <item>	JGKiD	</item>
+        <item>	Yanbi	</item>
+        <item>	HKT	</item>
+        <item>	BigDaddy	</item>
+        <item>	Mai Tiến Dũng	</item>
+        <item>	Thanh Hà	</item>
+        <item>	Nhật Kim Anh	</item>
+        <item>	Dương Hoàng Yến	</item>
+        <item>	Suni Hạ Linh	</item>
+        <item>	Phạm Anh Duy	</item>
+        <item>	Nguyễn Đức Cường	</item>
+        <item>	Binz	</item>
+        <item>	Thái Trinh	</item>
+        <item>	Thái Ngân	</item>
+        <item>	Rocker Nguyễn	</item>
+        <item>	Hòa Minzy	</item>
+        <item>	Quách Tuấn Du	</item>
+        <item>	Chu Bin	</item>
+        <item>	Hiền Thục	</item>
+        <item>	Anh Quân Idol	</item>
+        <item>	Tăng Phúc	</item>
+        <item>	Hồng Nhung	</item>
+        <item>	Tuấn Ngọc	</item>
+        <item>	Quốc Đại	</item>
+        <item>	Emily	</item>
+        <item>	Thủy Tiên	</item>
+        <item>	Dương Ngọc Thái	</item>
+        <item>	Akira Phan	</item>
+        <item>	Phương Thanh	</item>
+        <item>	Vy Oanh	</item>
+        <item>	Hòa Tấu	</item>
+        <item>	Võ Kiều Vân	</item>
+        <item>	LK	</item>
+        <item>	Quang Hà	</item>
+        <item>	Anh Khang	</item>
+        <item>	Lâm Chấn Huy	</item>
+        <item>	Đông Đào	</item>
+        <item>	MU	</item>
+        <item>	Nguyễn Hưng	</item>
+        <item>	Lê Cát Trọng Lý	</item>
+        <item>	Hương Lan	</item>
+        <item>	Tiêu Châu Như Quỳnh	</item>
+        <item>	Kimmese	</item>
+        <item>	Huỳnh Tú	</item>
+        <item>	Trọng Tấn	</item>
+        <item>	Mỹ Linh	</item>
+        <item>	Phương Mỹ Chi	</item>
+        <item>	Diệp Thanh Phong	</item>
+        <item>	The Sheep	</item>
+        <item>	Văn Mai Hương	</item>
+        <item>	Lưu Chí Vỹ	</item>
+        <item>	Bình Minh Vũ	</item>
+        <item>	Trúc Nhân	</item>
+        <item>	Đoàn Thúy Trang	</item>
+        <item>	Lê Sang	</item>
+        <item>	Juun Đăng Dũng	</item>
+        <item>	Lưu Ánh Loan	</item>
+        <item>	Khánh Ly	</item>
+        <item>	Trần Mạnh Tuấn	</item>
+        <item>	Uyên Linh	</item>
+        <item>	Billy Hoàng Phong	</item>
+        <item>	Bằng Cường	</item>
+        <item>	Cao Nam Thành	</item>
+        <item>	Ái Phương	</item>
+        <item>	Trung Tự	</item>
+        <item>	Bảo Thắng	</item>
+        <item>	Mạnh Đình	</item>
+        <item>	BAK	</item>
+        <item>	Quang Linh	</item>
+        <item>	Đức Tuấn	</item>
+        <item>	Thu Phương	</item>
+        <item>	Lil Shady	</item>
+        <item>	Hà Anh	</item>
+        <item>	Khang Việt	</item>
+        <item>	Nhật Tinh Anh	</item>
+        <item>	Lâm Hùng	</item>
+        <item>	Yến Trang	</item>
+        <item>	Ngọc Lan	</item>
+        <item>	LIME	</item>
+        <item>	Đỗ Phú Quí	</item>
+        <item>	Hoàng Châu	</item>
+        <item>	Huỳnh Nguyễn Công Bằng	</item>
+        <item>	Nguyễn Hồng Ân	</item>
+        <item>	SlimV	</item>
+        <item>	Hoaprox	</item>
+        <item>	Thu Hiền	</item>
+        <item>	Châu Dương	</item>
+        <item>	Tuấn Vũ	</item>
+        <item>	Đào Bá Lộc	</item>
+        <item>	Trương Thảo Nhi	</item>
+        <item>	Dương Minh Tuấn	</item>
+        <item>	Nam Cường	</item>
+        <item>	Tăng Nhật Tuệ	</item>
+        <item>	Lương Minh Trang	</item>
+        <item>	Tố My	</item>
+        <item>	Nguyễn Phi Hùng	</item>
+        <item>	Hồng Ngọc	</item>
+        <item>	Tino	</item>
+        <item>	Phạm Khánh Hưng	</item>
+        <item>	Bảo Trâm	</item>
+        <item>	Thu Thủy	</item>
+        <item>	Minh Hằng	</item>
+        <item>	HUI	</item>
+        <item>	Dương Trần	</item>
+        <item>	Kelvin Khánh	</item>
+        <item>	Nguyễn Hoàng Dũng	</item>
+        <item>	KHÙNG	</item>
+        <item>	Lip B	</item>
+        <item>	Dương Trần Nghĩa	</item>
+        <item>	Nguyệt Hằng	</item>
+        <item>	PB Nation	</item>
+        <item>	Yến Lê	</item>
+        <item>	Linh Hee	</item>
+        <item>	Phạm Trần Phương	</item>
+        <item>	Tường Nguyên	</item>
+        <item>	Nguyễn Đình Toàn	</item>
+        <item>	Ngọc Hân	</item>
+        <item>	Ngọt	</item>
+        <item>	Trần Thu Hà	</item>
+        <item>	Nguyên Hà	</item>
+        <item>	Phạm Quỳnh Anh	</item>
+        <item>	Bảo Yến	</item>
+        <item>	Hoàng Thùy Linh	</item>
+        <item>	Nguyễn Thạc Bảo Ngọc	</item>
+        <item>	Chí Thiện	</item>
+        <item>	Trường Sơn	</item>
+        <item>	Thu Trang MC	</item>
+        <item>	Tô Chấn Phong	</item>
+        <item>	Ngọc Linh	</item>
+        <item>	Mỹ Tâm	</item>
+        <item>	Trương Khải Minh	</item>
+        <item>	Thanh Thúy	</item>
+        <item>	Đinh Mạnh Ninh	</item>
+        <item>	Thanh Thảo	</item>
+        <item>	Cao Tùng Anh	</item>
+        <item>	Don Nguyễn	</item>
+        <item>	Hải Băng	</item>
+        <item>	Thanh Ngọc	</item>
+        <item>	Duy Uyên	</item>
+        <item>	RIN	</item>
+        <item>	Saka Trương Tuyền	</item>
+        <item>	Đinh Kiến Phong	</item>
+        <item>	Wanbi Tuấn Anh	</item>
+        <item>	Bolero	</item>
+        <item>	Da LAB	</item>
+        <item>	Mai Chi	</item>
+        <item>	Minh Thuận	</item>
+        <item>	Hương Giang Idol	</item>
+        <item>	Kim Ny Ngọc	</item>
+        <item>	Vân Quang Long	</item>
+        <item>	Quách Thành Danh	</item>
+        <item>	Kim Jun See	</item>
+        <item>	Bùi Vĩnh Phúc (Hot Boy Kẹo Kéo)	</item>
+        <item>	Duy Khoa	</item>
+        <item>	Nukan Trần Tùng Anh	</item>
+        <item>	Yến Hương	</item>
+        <item>	Dương Nhất Linh	</item>
+        <item>	Tốp Ca	</item>
+        <item>	Đào Phi Dương	</item>
+        <item>	Đình Phước	</item>
+        <item>	Tốp Ca Thiếu Nhi	</item>
+        <item>	V.Music	</item>
+        <item>	Ricky Star	</item>
+        <item>	Thảo Trang	</item>
+        <item>	Thanh Bùi	</item>
+        <item>	Tống Gia Vỹ	</item>
+        <item>	Lâm Bảo Phi	</item>
+        <item>	Khánh Phong	</item>
+        <item>	Lương Bằng Quang	</item>
+        <item>	Miko Lan Trinh	</item>
+        <item>	Andree	</item>
+        <item>	Nguyễn Thắng	</item>
+        <item>	Vicky Nhung	</item>
+        <item>	Don Hồ	</item>
+        <item>	Tim	</item>
+        <item>	Uyên Trang	</item>
+        <item>	Song Thư	</item>
+        <item>	Phùng Khánh Linh	</item>
+        <item>	Tân Nhàn	</item>
+        <item>	Đường Hưng	</item>
+        <item>	Võ Hạ Trâm	</item>
+        <item>	Giao Linh	</item>
+        <item>	Khánh Bình	</item>
+        <item>	Quách Beem	</item>
+        <item>	MLee	</item>
+        <item>	Ngọc Anh	</item>
+        <item>	Lâm Chấn Kiệt	</item>
+        <item>	Bé Ngọc Ngân	</item>
+        <item>	Hoàng Bách	</item>
+        <item>	Hoàng Oanh	</item>
+        <item>	Đan Phương	</item>
+        <item>	Bảo Uyên	</item>
+        <item>	Lưu Hương Giang	</item>
+        <item>	Thúy Khanh	</item>
+        <item>	Tạ Quang Thắng	</item>
+        <item>	Long Nhật	</item>
+        <item>	Cảnh Minh	</item>
+        <item>	Lương Gia Hùng	</item>
+        <item>	Bé Trang Thư	</item>
+        <item>	Hằng BingBoong	</item>
+        <item>	Ý Lan	</item>
+        <item>	Vĩnh Thuyên Kim	</item>
+        <item>	Minh Cảnh	</item>
+        <item>	Phương Thùy (Nhóm Phù Sa)	</item>
+        <item>	Thùy Trang	</item>
+        <item>	GREY-D (Đoàn Thế Lân)	</item>
+        <item>	Jemini Band	</item>
+        <item>	Hoàng Lan	</item>
+        <item>	Trường Kha	</item>
+        <item>	Thanh Vũ	</item>
+        <item>	Hà Phương	</item>
+        <item>	Lâm Vũ	</item>
+        <item>	Loki Bảo Long	</item>
+        <item>	Khổng Tú Quỳnh	</item>
+        <item>	Trung Quang	</item>
+        <item>	Tuấn Anh Trần	</item>
+        <item>	Diễm Thuỳ	</item>
+        <item>	Mr.T	</item>
+        <item>	Giang Tử	</item>
+        <item>	Trương Linh Đan	</item>
+        <item>	Xuân Nghi	</item>
+        <item>	Chế Linh	</item>
+        <item>	Trịnh Lam	</item>
+        <item>	Tia Hải Châu	</item>
+        <item>	Dương 	</item>
+        <item>	Ông Cao Thắng	</item>
+        <item>	Hà Vân	</item>
+        <item>	JC Hưng	</item>
+        <item>	Mây Trắng	</item>
+        <item>	Trịnh Tuấn Vỹ	</item>
+        <item>	Châu Việt Cường	</item>
+        <item>	Châu Gia Kiệt	</item>
+        <item>	Lm.JB.Nguyễn Sang	</item>
+        <item>	Eddy Kiên	</item>
+        <item>	Thiên Quang	</item>
+        <item>	Lâm Nhật Tiến	</item>
+        <item>	Ginô Tống	</item>
+        <item>	Hồ Trung Dũng	</item>
+        <item>	Dạ Thảo My	</item>
+        <item>	Duyên Anh Idol	</item>
+        <item>	Elvis Phương	</item>
+        <item>	Dương Trường Giang	</item>
+        <item>	Lân Nhã	</item>
+        <item>	Trương Thế Vinh	</item>
+        <item>	Hoàng Lê Vi	</item>
+        <item>	Nguyễn Hồng Nhung	</item>
+        <item>	BlackBi	</item>
+        <item>	Ngô Như Thủy	</item>
+        <item>	IRIS	</item>
+        <item>	MicroWave	</item>
+        <item>	Trần Thái Hòa	</item>
+        <item>	Vũ Thảo My	</item>
+        <item>	Minh Vương	</item>
+        <item>	Xuân Hiếu	</item>
+        <item>	Xuân Tài	</item>
+        <item>	Anh Tú	</item>
+        <item>	Việt Thắng	</item>
+        <item>	Hạ Vy	</item>
+        <item>	Nguyễn Hải Phong	</item>
+        <item>	Ngô Quốc Linh	</item>
+        <item>	Peto	</item>
+        <item>	Sơn Hạ	</item>
+        <item>	Hồng Quyên	</item>
+        <item>	Huỳnh Hiền Năng	</item>
+        <item>	Lệ Thủy	</item>
+        <item>	Mr A	</item>
+        <item>	Sky	</item>
+        <item>	Vũ Khanh	</item>
+        <item>	Hồ Gia Khánh	</item>
+        <item>	Hà Đặng	</item>
+        <item>	Nguyễn Hải Yến	</item>
+        <item>	Mai Quốc Huy	</item>
+        <item>	Loren Kid	</item>
+        <item>	Tiramisu Band	</item>
+        <item>	The Men	</item>
+        <item>	Hương Thủy	</item>
+        <item>	Jak Nguyễn	</item>
+        <item>	AXN	</item>
+        <item>	Duy Trường	</item>
+        <item>	Vĩnh Tâm	</item>
+        <item>	La Thăng (Huy Nam &amp; Huy Khánh)	</item>
+        <item>	Hoàng Thúy Vy	</item>
+        <item>	NSƯT Thanh Ngân	</item>
+        <item>	Đăng Khôi	</item>
+        <item>	Chế Thanh	</item>
+        <item>	Tường Quân	</item>
+        <item>	Thái Tuyết Trâm	</item>
+        <item>	Khang Lê	</item>
+        <item>	B Ray	</item>
+        <item>	Khánh Linh	</item>
+        <item>	Đại Nhân	</item>
+        <item>	Trang Nhung	</item>
+        <item>	Sơn Ngọc Minh	</item>
+        <item>	Yến Nhi	</item>
+        <item>	Mắt Ngọc	</item>
+        <item>	Hà Duy Thái	</item>
+        <item>	Cẩm Vân	</item>
+        <item>	Đình Phong	</item>
+        <item>	Hồ Văn Cường	</item>
+        <item>	Tuấn Khương	</item>
+        <item>	Lưu Bích	</item>
+        <item>	Lưu Bảo Huy	</item>
+        <item>	Huy Nam (A#)	</item>
+        <item>	Song Luân	</item>
+        <item>	Minh Thư	</item>
+        <item>	Hà Thanh Xuân	</item>
+        <item>	Trấn Thành	</item>
+        <item>	Phương Vy	</item>
+        <item>	Vân Trường	</item>
+        <item>	Trương Đình	</item>
+        <item>	Randy	</item>
+        <item>	Tùng Dương	</item>
+        <item>	Phương Thảo	</item>
+        <item>	Uni	</item>
+        <item>	Tam Hổ	</item>
+        <item>	Võ Linh Phương	</item>
+        <item>	Khánh Đơn	</item>
+        <item>	Ngọc Hạ	</item>
+        <item>	Khánh Tiên	</item>
+        <item>	Nhật Nguyệt Band	</item>
+        <item>	Lilgee &amp; Jarvis	</item>
+        <item>	Cao Lê Hà Trang	</item>
+        <item>	Madihu	</item>
+        <item>	Hàn Thái Tú	</item>
+        <item>	Trần Tâm	</item>
+        <item>	Hạnh Sino	</item>
+        <item>	Kay Trần	</item>
+        <item>	DJ Bảo Linh	</item>
+        <item>	Chí Tài	</item>
+        <item>	Kim Linh	</item>
+        <item>	Vân Khánh	</item>
+        <item>	Đinh Uyên	</item>
+        <item>	Ngọc Minh	</item>
+        <item>	Cao Bá Hưng	</item>
+        <item>	Mai Tuấn	</item>
+        <item>	FB Boiz	</item>
+        <item>	Only T	</item>
+        <item>	Ngọc Thảo	</item>
+        <item>	Phúc Bồ	</item>
+        <item>	Mỹ Lệ	</item>
+        <item>	Phương Dung	</item>
+        <item>	Khánh Hà	</item>
+        <item>	Bá Hưng	</item>
+        <item>	Lý Tuấn Kiệt	</item>
+        <item>	YunjBoo	</item>
+        <item>	Cao Mỹ Kim	</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<resources>
+<!--Defaultscreenmargins,pertheAndroidDesignguidelines.-->
+
+
+<dimen name="textSize15">22.5sp</dimen>
+<dimen name="textSize16">24.0sp</dimen>
+<dimen name="textSize17">25.5sp</dimen>
+<dimen name="textSize18">27.0sp</dimen>
+<dimen name="textSize20">30.0sp</dimen>
+<dimen name="textSize26">39.0sp</dimen>
+<dimen name="textSize23">34.5sp</dimen>
+<dimen name="textSize30">45.0sp</dimen>
+<dimen name="textSize40">60.0sp</dimen>
+
+<dimen name="value0">0.0dp</dimen>
+<dimen name="value1">1.5dp</dimen>
+<dimen name="value2">3.0dp</dimen>
+<dimen name="value3">4.5dp</dimen>
+<dimen name="value4">6.0dp</dimen>
+<dimen name="value5">7.5dp</dimen>
+<dimen name="value8">12.0dp</dimen>
+<dimen name="value10">15.0dp</dimen>
+<dimen name="value11">16.5dp</dimen>
+<dimen name="value12">18.0dp</dimen>
+<dimen name="value13">19.5dp</dimen>
+<dimen name="value15">22.5dp</dimen>
+<dimen name="value16">24.0dp</dimen>
+<dimen name="value20">30.0dp</dimen>
+<dimen name="value25">37.5dp</dimen>
+<dimen name="value30">45.0dp</dimen>
+<dimen name="value32">48.0dp</dimen>
+<dimen name="value35">52.5dp</dimen>
+<dimen name="value40">60.0dp</dimen>
+<dimen name="value45">67.5dp</dimen>
+<dimen name="value48">72.0dp</dimen>
+<dimen name="value50">75.0dp</dimen>
+<dimen name="value60">90.0dp</dimen>
+<dimen name="value70">105.0dp</dimen>
+<dimen name="value76">114.0dp</dimen>
+<dimen name="value80">120.0dp</dimen>
+
+<dimen name="value100">150.0dp</dimen>
+<dimen name="value110">165.0dp</dimen>
+<dimen name="value115">172.5dp</dimen>
+<dimen name="value120">180.0dp</dimen>
+<dimen name="value130">195.0dp</dimen>
+<dimen name="value140">210.0dp</dimen>
+<dimen name="value150">225.0dp</dimen>
+<dimen name="value192">288.0dp</dimen>
+<dimen name="value200">300.0dp</dimen>
+<dimen name="value210">315.0dp</dimen>
+<dimen name="value250">375.0dp</dimen>
+<dimen name="value280">420.0dp</dimen>
+<dimen name="value300">450.0dp</dimen>
+<dimen name="value325">487.5dp</dimen>
+<dimen name="value360">540.0dp</dimen>
+<dimen name="value400">600.0dp</dimen>
+
+</resources>

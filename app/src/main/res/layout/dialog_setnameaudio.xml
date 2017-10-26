@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/value10">
+
+    <EditText
+        android:id="@+id/edtNameAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:hint="Nhập tên mà bạn muốn lưu"
+        android:textColor="@color/white"
+        android:theme="@style/Style.For.EditText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNameAudio"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSaveName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/no_color"
+            android:enabled="true"
+            android:text="Lưu"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/no_color"
+            android:text="Ghi âm lại"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
