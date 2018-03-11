@@ -4,21 +4,33 @@ Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 def superpowered_sdk_path = properties.getProperty('superpowered.dir')
 
+def computeVersionName() {
+    return "2.0"
+}
+
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MocAlias'
+            keyPassword '123456'
+            storeFile file('D:/MocKaraoke.jks')
+            storePassword '123456789'
+        }
+    }
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "home.mockaraokev2"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 1
+        versionCode rootProject.setVersion(1.5)
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
         ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64' // these platforms cover 99% percent of all Android devices
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            // these platforms cover 99% percent of all Android devices
         }
-
         externalNativeBuild {
             cmake {
                 arguments '-DANDROID_PLATFORM=android-16',
@@ -26,10 +38,12 @@ android {
                         '-DANDROID_ARM_NEON=TRUE',
                         '-DANDROID_STL=gnustl_static',
                         "-DPATH_TO_SUPERPOWERED:STRING=${superpowered_sdk_path}"
-                cFlags '-O3', '-fsigned-char', '-fexceptions' // full optimization, char data type is signed
+                cFlags '-O3', '-fsigned-char', '-fexceptions'
+                // full optimization, char data type is signed
                 cppFlags '-fsigned-char', "-I${superpowered_sdk_path}"
             }
         }
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
@@ -42,12 +56,30 @@ android {
             jniLibs.srcDirs = ['src/main/jni']
         }
     }
-
     externalNativeBuild {
         cmake {
             path 'src/main/jni/CMakeLists.txt'
         }
     }
+    configurations {
+        all {
+            exclude module: 'httpclient'
+        }
+    }
+    productFlavors {
+    }
+
+    // Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+    def keystorePropertiesFile = rootProject.file("keystore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+    def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+
 }
 
 dependencies {
@@ -73,8 +105,8 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.facebook.android:facebook-android-sdk:4.26.0'
-
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    annotationProcessor 'com.squareup.dagger:dagger-compiler:1.0.0'
     androidTestCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

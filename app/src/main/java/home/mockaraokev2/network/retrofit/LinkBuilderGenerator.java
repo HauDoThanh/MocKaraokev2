@@ -31,7 +31,7 @@ class LinkBuilderGenerator {
         return retrofit.create(t);
     }
 
-    public static <T> T createLinkBuilderMocKara(Class<T> t) {
+    public static <L> L createLinkBuilderMocKara(Class<L> t) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(URL2)
                 .addConverterFactory(GsonConverterFactory.create())

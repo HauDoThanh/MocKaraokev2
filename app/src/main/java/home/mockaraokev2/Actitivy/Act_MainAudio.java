@@ -1,5 +1,6 @@
 package home.mockaraokev2.Actitivy;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -30,6 +31,7 @@ import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunnin
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
 
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -167,6 +169,7 @@ public class Act_MainAudio extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("RestrictedApi")
     private void initToolbar() {
         Toolbar toolbarFavorite = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbarFavorite);
@@ -190,12 +193,12 @@ public class Act_MainAudio extends AppCompatActivity {
 
     private void callMethod() {
         getInfoToAddEffect();
-        progressDownload.setVisibility(View.GONE);
+        /*progressDownload.setVisibility(View.GONE);
         txtProgress.setVisibility(View.GONE);
         layoutMainAudio.setVisibility(View.VISIBLE);
 
-        splitFileBeat();
-        // getTokenAndDownloadBeat(beatFileName.replace("_", " "));
+        splitFileBeat();*/
+        getTokenAndDownloadBeat(beatFileName.replace("_", " "));
     }
 
     /*+++++++++++ Lấy thông tin từ Act_PlayVideo để tải beat về & cắt beat ++++++++++++++ */
@@ -277,7 +280,7 @@ public class Act_MainAudio extends AppCompatActivity {
                             "-i",
                             RECORD_PATH + "/" + "beatDownload.mp3",
                             "-ss",
-                            "00:00:00.000",
+                            "00:00:00.023",
                             "-to",
                             timeEnd,
                             "-c",
@@ -373,7 +376,7 @@ public class Act_MainAudio extends AppCompatActivity {
             if (samplerateString == null) samplerateString = "41100";
             if (buffersizeString == null) buffersizeString = "512";
 
-           // SuperpoweredExample(Integer.parseInt(samplerateString), Integer.parseInt(buffersizeString), RECORD_PATH + "/" + recordedFileName + ".wav");
+            // SuperpoweredExample(Integer.parseInt(samplerateString), Integer.parseInt(buffersizeString), RECORD_PATH + "/" + recordedFileName + ".wav");
             SuperpoweredExample(Integer.parseInt(samplerateString), Integer.parseInt(buffersizeString), RECORD_PATH + "/" + recordedFileName + ".mp3");
             Log.e("record", "file record: " + RECORD_PATH + "/" + recordedFileName + ".mp3");
 
@@ -441,11 +444,11 @@ public class Act_MainAudio extends AppCompatActivity {
                     Log.e("record: ", "SUCCESS with output : " + message);
 
 
-                   /* new File(tmpBeatFile).delete();
+                    new File(tmpBeatFile).delete();
                     new File(tmpRecordFile).delete();
                     new File(beatFile).delete();
                     new File(RECORD_PATH + "/" + recordedFileName + ".mp3").delete();
-                    new File(RECORD_PATH + "/beatDownload.mp3").delete();*/
+                    new File(RECORD_PATH + "/beatDownload.mp3").delete();
                     //new File(RECORD_PATH + "/" + recordedFileName + ".wav").delete();
 
                     //convertFileToMp3();

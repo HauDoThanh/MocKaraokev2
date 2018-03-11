@@ -6,7 +6,6 @@ import home.mockaraokev2.network.models.PostObject;
 import home.mockaraokev2.network.models.VideoResult;
 import retrofit2.Call;
 import retrofit2.Callback;
-
 /**
  Created by admin on 6/9/2017.
  */
@@ -38,8 +37,9 @@ public class Command {
         call.enqueue(callback);
     }
 
+    //post
     public void execute(String user, String pass, Callback<PostObject> callback){
-        LinkBuilder linkBuilder = LinkBuilderGenerator.createLinkBuilderMocKara(LinkBuilder.class);
+        LinkBuilder2 linkBuilder = LinkBuilderGenerator.createLinkBuilderMocKara(LinkBuilder2.class);
         Call<PostObject> call = linkBuilder.getToken(user, pass);
         call.enqueue(callback);
     }

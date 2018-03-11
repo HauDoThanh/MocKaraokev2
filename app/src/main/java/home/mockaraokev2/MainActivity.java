@@ -151,8 +151,6 @@ public class MainActivity extends AppCompatActivity
                 .build();
 
         pre = getSharedPreferences(Act_Login.KEY_SHARE, MODE_PRIVATE);
-
-
         modelDanhSachPhat = ModelDanhSachPhat.Instances(MainActivity.this);
     }
 

@@ -75,7 +75,8 @@ public class Fragment_Hot extends Fragment {
     }
 
     private void requestYoutubeItem() {
-        command.execute("viewCount", "", "video", "", "30", new Callback<VideoResult>() {
+        command.execute("viewCount", "", "video", "", "30",
+                new Callback<VideoResult>() {
             @Override
             public void onResponse(Call<VideoResult> call, Response<VideoResult> response) {
                 if (response.isSuccessful()) {

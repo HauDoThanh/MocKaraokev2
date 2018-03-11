@@ -73,31 +73,39 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/value48"
-            android:background="#5c1a0f"
-            app:tabIndicatorColor="#fff"
-            app:tabPaddingEnd="@dimen/value2"
-            app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/de_select">
-
-        </android.support.design.widget.TabLayout>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/value48" />
+        android:id="@+id/layoutBottomPlayVideo"
+        android:background="#00ffffff"
+        android:layout_height="match_parent">
 
         <FrameLayout
-            android:id="@+id/frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value48"
+                android:background="#5c1a0f"
+                app:tabIndicatorColor="#fff"
+                app:tabPaddingEnd="@dimen/value2"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/de_select">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/value48" />
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
     </FrameLayout>
+
 
 </LinearLayout>

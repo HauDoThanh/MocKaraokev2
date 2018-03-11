@@ -17,7 +17,7 @@ import retrofit2.http.Query;
 
 interface LinkBuilder {
 
-    @GET("search?part=snippet&channelId=UC6-iiAvpLENHaflu1FGEctA&key=AIzaSyA2XcoY4o4L_zGdFoYVMFcUMYvJikbgCfw")
+    @GET("search?part=snippet&channelId=UC6-iiAvpLENHaflu1FGEctA&key=AIzaSyBeRSOhD4xgyk27uREP9FPNLKQWK4_NhOA")
     Call<VideoResult> getLinkBuilder(
             @Query("order") String order,
             @Query("pageToken") String pageToken,
@@ -26,7 +26,7 @@ interface LinkBuilder {
             @Query("maxResults") String maxResults
     );
 
-    @GET("playlistItems?part=snippet&channelId=UC6-iiAvpLENHaflu1FGEctA&key=AIzaSyA2XcoY4o4L_zGdFoYVMFcUMYvJikbgCfw")
+    @GET("playlistItems?part=snippet&channelId=UC6-iiAvpLENHaflu1FGEctA&key=AIzaSyBeRSOhD4xgyk27uREP9FPNLKQWK4_NhOA")
     Call<PlaylistResult> getLinkBuilder(
             @Query("playlistId") String playlistId,
             @Query("pageToken") String pageToken,

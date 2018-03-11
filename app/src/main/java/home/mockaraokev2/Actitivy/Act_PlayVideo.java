@@ -27,6 +27,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -92,6 +93,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
     private int seek, videoCurrent, timeEndRecord;
     private int clickCamera = 1;
     private TextView txtShow;
+    private FrameLayout layoutBottomPlayVideo;
 
     //Hàm xin quyền truy cập
     private static boolean hasPermissions(Context context, String... permissions) {
@@ -133,6 +135,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
         btnFavorite = (Button) findViewById(R.id.btnFavorite);
         youtubeFragment = (YouTubePlayerSupportFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.youtubeFragment);
+        layoutBottomPlayVideo = (FrameLayout) findViewById(R.id.layoutBottomPlayVideo);
 
         //getData from playlist Fragment
         videoAddFavo = getIntent().getParcelableExtra("videoAddFa");
@@ -322,7 +325,8 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
 
     public void prepareAudioRecorder() {
         mediaRecorder = new MediaRecorder();
-        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
+        //mediaRecorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
+        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mediaRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
         mediaRecorder.setOutputFile(RECORD_PATH + AUDIO_RECORDER_TEMP_FILE);
@@ -336,6 +340,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
                 Toast.makeText(this, "Xin vui lòng chờ cho đến khi video được load!", Toast.LENGTH_SHORT).show();
             } else {
                 Log.d(TAG, "Nhan bat dau ghi am");
+                layoutBottomPlayVideo.setEnabled(false);
                 youtubePlayer.seekToMillis(11);
 
                 checkClickRecord = true;
@@ -344,6 +349,8 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
 
         } else {
             Log.d(TAG, "Dung ghi am");
+            layoutBottomPlayVideo.setEnabled(true);
+
             mediaRecorder.stop();
             t.cancel();
             timeEndRecord = youtubePlayer.getCurrentTimeMillis();
@@ -382,14 +389,9 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
                     Log.d(TAG, "playback event:  onRecord");
 
                     try {
+
                         mediaRecorder.prepare();
                         mediaRecorder.start();
-                        btnCamera.setEnabled(false);
-
-                        timeEndRecord = youtubePlayer.getDurationMillis();
-                        Toast.makeText(Act_PlayVideo.this, "Bắt đầu", Toast.LENGTH_SHORT).show();
-                        btnRecord.setBackgroundResource(R.drawable.stop);
-                        isRecoder = true;
                         t.scheduleAtFixedRate(new TimerTask() {
                             @Override
                             public void run() {
@@ -397,13 +399,23 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
                                     @Override
                                     public void run() {
                                         timer++;
-                                       // Log.d(TAG, timer + "");
+                                        // Log.d(TAG, timer + "");
                                         //  if (timer % 1000 == 0)
                                         //txtShow.setText(String.valueOf(timer));
                                     }
                                 });
                             }
                         }, 0, 1);
+                        Log.d(TAG, "Youtube seek " + youtubePlayer.getCurrentTimeMillis());
+                        Log.d(TAG, "timer chay: " + timer);
+
+                        btnCamera.setEnabled(false);
+
+                        timeEndRecord = youtubePlayer.getDurationMillis();
+                        Toast.makeText(Act_PlayVideo.this, "Bắt đầu", Toast.LENGTH_SHORT).show();
+                        btnRecord.setBackgroundResource(R.drawable.stop);
+                        isRecoder = true;
+
                     } catch (IllegalStateException | IOException e) {
                         e.printStackTrace();
                     }
@@ -476,7 +488,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
     }
 
     private void goToMainAudio(final String newName) {
-        if (isHeadPhonePlugin) {
+        /*if (isHeadPhonePlugin) {
             Intent intent = new Intent(Act_PlayVideo.this, Act_MainAudio.class);
             Bundle bundle = new Bundle();
             bundle.putString("recordFileName", newName);
@@ -484,7 +496,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
             bundle.putInt("timeEnd", timeEndRecord);
             intent.putExtra("infoProcess", bundle);
             startActivity(intent);
-        } else {
+        } else {*/
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Thông báo")
                     .setMessage("Bạn có muốn tạo video từ bài hát vừa thu âm không?")
@@ -494,7 +506,6 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
                             Intent intent = new Intent(Act_PlayVideo.this, Act_CreateVideoFromAudio.class);
                             intent.putExtra("fileEffect", newName);
                             Log.d("CREATE_VIDEO", "Name sent from Act play video: " + newName);
-
                             startActivity(intent);
                         }
                     })
@@ -506,7 +517,7 @@ public class Act_PlayVideo extends AppCompatActivity implements YouTubePlayer.Pl
                     });
             Dialog dialog = builder.create();
             dialog.show();
-        }
+     //   }
     }
 
     private List<String> getAllAudio() {
